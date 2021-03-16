@@ -1,0 +1,187 @@
+COMPLATION
+===========================================================
+gprbuild -d -P/home/wruslan/github-mmu/ada-callpython-numpy/ada_callpython_numpy.gpr -s -k
+Compile
+   [Ada]          main_ada_callpython_numpy.adb
+   [Ada]          pkg_ada_callpython_module.adb
+   [Ada]          pkg_ada_datetime_stamp.adb
+   [Ada]          pkg_ada_realtime_delays.adb
+Bind
+   [gprbind]      main_ada_callpython_numpy.bexch
+   [Ada]          main_ada_callpython_numpy.ali
+Link
+   [link]         main_ada_callpython_numpy.adb
+[2021-03-16 13:01:28] process terminated successfully, elapsed time: 01.35s
+
+EXECUTION
+===========================================================
+/home/wruslan/github-mmu/ada-callpython-numpy/exec/main_ada_callpython_numpy.adx
+2021-03-16 05:02:50.12665414410 STARTED: main Bismillah 3 times WRY
+
+-- =====================================================
+Ada executing Python directly (in Ada environment)
+
+Executing... PACPM.Execute_String ("import numpy as np") 
+
+-- =====================================================
+Loading external Python module and calling functions from that module:
+Loading module from file  : src/mod-python/python_module_01.py
+Successfully loaded module: src/mod-python/python_module_01.py
+
+Bismillah from python_module_01
+
+asking Python to add two integers:
+Python adding: 10 + 2
+Ada got result from Python: 12
+
+we can try other operations, too:
+subtract: 8
+multiply: 20
+divide  : 5
+
+-- =====================================================
+Loading external Python module and calling functions from that module:
+Loading module from file  : src/mod-python/python_module_02.py
+Successfully loaded module: src/mod-python/python_module_02.py
+
+Bismillah from python_module_02
+
+-- =====================================================
+
+2021-03-16 05:02:50.25796889508 ENDED: main Alhamdulillah 3 times WRY. Execution time:  0.131503744 seconds.
+[2021-03-16 13:02:50] process terminated successfully, elapsed time: 00.30s
+
+FILE STRUCTURE
+===========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mmu/ada-callpython-matplotlib$  cd ../ada-callpython-numpy/
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mmu/ada-callpython-numpy$ ls -al
+total 48
+drwxrwxr-x 10 wruslan wruslan 4096 Mar 16 12:30 .
+drwxrwxr-x  9 wruslan wruslan 4096 Mar 15 15:35 ..
+-rw-rw-r--  1 wruslan wruslan 1540 Mar 16 12:30 ada_callpython_numpy.gpr
+drwxrwxr-x  5 wruslan wruslan 4096 Mar 16 13:03 docs
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 16 13:01 exec
+drwxrwxr-x  4 wruslan wruslan 4096 Mar 16 09:29 figures
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 16 09:30 files
+drwxrwxr-x  8 wruslan wruslan 4096 Mar 16 13:00 .git
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 15 08:40 lib
+drwxrwxr-x  2 wruslan wruslan 4096 Mar 16 13:01 obj
+-rw-rw-r--  1 wruslan wruslan   45 Mar 15 15:07 README.md
+drwxrwxr-x  7 wruslan wruslan 4096 Mar 16 12:34 src
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mmu/ada-callpython-numpy$ 
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mmu/ada-callpython-numpy$ tree ./
+./
+├── ada_callpython_numpy.gpr
+├── docs
+│   ├── ada-references
+│   │   ├── 01-Introduction-to-Ada-(2020).pdf
+│   │   ├── 02-Introduction-to-Spark-(2020).pdf
+│   │   └── ref-operator-precedence.txt
+│   ├── copy-project-specifications
+│   │   ├── ada_full_project_specifications.gpr
+│   │   └── ada_simplified_project_specifications.gpr
+│   ├── matplotlib-references
+│   │   └── reference-links-01.txt
+│   ├── session-01.txt
+│   ├── session-02.txt
+│   └── session-03.txt
+├── exec
+│   └── main_ada_callpython_numpy.adx
+├── figures
+│   ├── jpg
+│   │   ├── Screenshot from 2021-03-16 05-33-47.jpg
+│   │   └── Screenshot from 2021-03-16 09-28-03.jpg
+│   └── png
+│       ├── Screenshot from 2021-03-16 05-33-47.png
+│       └── Screenshot from 2021-03-16 09-28-03.png
+├── files
+│   └── reference-links-01.txt
+├── lib
+├── obj
+│   ├── ada_callpython_numpy-loc.xml
+│   ├── ada_callpython_template-loc.xml
+│   ├── ada_full_project_specifications-loc.xml
+│   ├── ada_python_template-loc.xml
+│   ├── b__main_ada_call_python_module.adb
+│   ├── b__main_ada_callpython_module.adb
+│   ├── b__main_ada_call_python_module.ads
+│   ├── b__main_ada_callpython_module.ads
+│   ├── b__main_ada_call_python_module.ali
+│   ├── b__main_ada_callpython_module.ali
+│   ├── b__main_ada_call_python_module.o
+│   ├── b__main_ada_callpython_module.o
+│   ├── b__main_ada_callpython_numpy.adb
+│   ├── b__main_ada_callpython_numpy.ads
+│   ├── b__main_ada_callpython_numpy.ali
+│   ├── b__main_ada_callpython_numpy.o
+│   ├── b__main_ada_xxxxxxx.adb
+│   ├── b__main_ada_xxxxxxx.ads
+│   ├── b__main_ada_xxxxxxx.ali
+│   ├── b__main_ada_xxxxxxx.o
+│   ├── gpsauto.cgpr
+│   ├── main_ada_call_python_module.adb.stderr
+│   ├── main_ada_callpython_module.adb.stderr
+│   ├── main_ada_call_python_module.adb.stdout
+│   ├── main_ada_callpython_module.adb.stdout
+│   ├── main_ada_call_python_module.ali
+│   ├── main_ada_callpython_module.ali
+│   ├── main_ada_call_python_module.bexch
+│   ├── main_ada_callpython_module.bexch
+│   ├── main_ada_call_python_module.cswi
+│   ├── main_ada_callpython_module.cswi
+│   ├── main_ada_call_python_module.o
+│   ├── main_ada_callpython_module.o
+│   ├── main_ada_callpython_numpy.adb.stderr
+│   ├── main_ada_callpython_numpy.adb.stdout
+│   ├── main_ada_callpython_numpy.ali
+│   ├── main_ada_callpython_numpy.bexch
+│   ├── main_ada_callpython_numpy.cswi
+│   ├── main_ada_callpython_numpy.o
+│   ├── main_ada_xxxxxxx.bexch
+│   ├── pkg_ada_call_python_module.adb.stderr
+│   ├── pkg_ada_callpython_module.adb.stderr
+│   ├── pkg_ada_call_python_module.adb.stdout
+│   ├── pkg_ada_callpython_module.adb.stdout
+│   ├── pkg_ada_call_python_module.ali
+│   ├── pkg_ada_callpython_module.ali
+│   ├── pkg_ada_call_python_module.cswi
+│   ├── pkg_ada_callpython_module.cswi
+│   ├── pkg_ada_call_python_module.o
+│   ├── pkg_ada_callpython_module.o
+│   ├── pkg_ada_datetime_stamp.adb.stderr
+│   ├── pkg_ada_datetime_stamp.adb.stdout
+│   ├── pkg_ada_datetime_stamp.ali
+│   ├── pkg_ada_datetime_stamp.cswi
+│   ├── pkg_ada_datetime_stamp.o
+│   ├── pkg_ada_realtime_delays.adb.stderr
+│   ├── pkg_ada_realtime_delays.adb.stdout
+│   ├── pkg_ada_realtime_delays.ali
+│   ├── pkg_ada_realtime_delays.cswi
+│   └── pkg_ada_realtime_delays.o
+├── README.md
+└── src
+    ├── main_ada_callpython_numpy.adb
+    ├── mod-python
+    │   ├── python_module_01.py
+    │   ├── python_module_01.pyc
+    │   ├── python_module_02.py
+    │   └── python_module_02.pyc
+    ├── pkg-ada-callpython-module
+    │   ├── pkg_ada_callpython_module.adb
+    │   └── pkg_ada_callpython_module.ads
+    ├── pkg-ada-datetime-stamp
+    │   ├── pkg_ada_datetime_stamp.adb
+    │   └── pkg_ada_datetime_stamp.ads
+    ├── pkg-ada-random-numbers
+    │   ├── pkg_ada_random_numbers.adb
+    │   └── pkg_ada_random_numbers.ads
+    └── pkg-ada-realtime-delays
+        ├── pkg_ada_realtime_delays.adb
+        └── pkg_ada_realtime_delays.ads
+
+17 directories, 90 files
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-mmu/ada-callpython-numpy$ 
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+

@@ -1,0 +1,24 @@
+https://matplotlib.org/stable/tutorials/introductory/pyplot.html
+
+https://www.edureka.co/blog/python-matplotlib-tutorial/
+
+https://realpython.com/python-matplotlib-guide/
+
+https://queirozf.com/entries/matplotlib-pylab-pyplot-etc-what-s-the-different-between-these
+
+===========================================================
+Matplolib : It is a Python plotting library, inspired by MATLAB, meaning that the terms used (Axis, Figure, Plots) will be similar to those used in MATLAB.
+
+    import matplotlib 
+
+PyPlot : It is a shell-like interface to Matplotlib, to make it easier to use for people who are used to MATLAB.
+
+    import numpy as np
+	import matplotlib.pyplot as plt
+	
+Pylab: Someone had the idea of combining both the PyPlot and NumPy namespaces into a single one (to avoid having to import two namespaces), the result is PyLab. Using Pylab is now discouraged.
+
+	from matplotlib.pylab import *
+
+===========================================================	
+
